@@ -1,0 +1,11 @@
+body{
+    background-image: url('https://www.pattoperlautonomia.eu/images/tiro-di-dadi.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: rgb(216, 214, 211);
+    border-radius: 5px;
+}
+
