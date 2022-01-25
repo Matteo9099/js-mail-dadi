@@ -20,7 +20,7 @@ accedi.addEventListener('click',
         
        if (bool == true){
            document.getElementById('result').innerHTML = 'Bentornato ' + name;
-           document.getElementById('result').style.color = "green";
+           document.getElementById('result').style.color = "#fff";
        }
        else if(mail == ""|| password== "" || name==""){
         alert('Riempi i campi');
