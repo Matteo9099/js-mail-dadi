@@ -1,20 +1,34 @@
-const accessi = ['mario','fabio','luca','silvia'];
-const mail = prompt('Inserisci email');
-let condizione = false;
 
-for(let i=0; i<accessi.length; i++){
 
-     if(accessi[i] == mail){
-         condizione = true;
-         document.getElementById('result').innerHTML = 'Bentornato ' + mail;
-     } 
-}
+accedi.addEventListener('click',
+    function(){
 
- 
-if (condizione == true){
-    document.getElementById('result').innerHTML = 'Bentornato ' + mail;
-}
-else{
-    document.getElementById('result').innerHTML = 'Non presente';
-    
-}
+        const accessi = ['Mariorossi@gmail.com', 'fede_Verdi@gmail.com', 'MarinaVanni89@libero.it','roberto-Bianchi@virgilio.it'];
+        let bool = false;
+        const accedi = document.getElementById('accedi');
+        let mail = document.getElementById('mail').value;
+        let password = document.getElementById('password').value;
+        let name = document.getElementById('name').value;
+
+
+        for(let i=0; i<accessi.length; i++){
+
+            if(accessi[i].toLocaleLowerCase() == mail.toLocaleLowerCase()){
+                bool = true;
+            } 
+        }
+        
+       if (bool == true){
+           document.getElementById('result').innerHTML = 'Bentornato ' + name;
+           document.getElementById('result').style.color = "green";
+       }
+       else if(mail == ""|| password== "" || name==""){
+        alert('Riempi i campi');
+         }
+       else{
+           document.getElementById('result').innerHTML = name + ', mi dispiace ma non sei in lista.';
+           document.getElementById('result').style.color = "red";
+       }
+    }
+)
+

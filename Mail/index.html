@@ -12,13 +12,21 @@
     
 
     <div class="container mt-5">
+      <h2>Inserire email e password per accedere al BoolSecret</h2>
         <div class="row">
+          <div class="col">
+            <input type="email" id="name" placeholder="Nome Cognome">
+            <h3 id="result" class="mt-3 text-center"></h3>
+          </div>
             <div class="col">
-              <input type="email" class="form-control" placeholder="email">
-              <p id="result" class="mt-3 text-center"></p>
+              <input type="email" id="mail" placeholder="email">
+              <h3 id="result" class="mt-3 text-center"></h3>
             </div>
             <div class="col">
-              <input type="password" class="form-control" placeholder="Password">
+              <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="col">
+              <button id="accedi" type="button" class="btn btn-success">Accedi</button>
             </div>
           </div>
     </div>
